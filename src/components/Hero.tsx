@@ -9,13 +9,13 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="max-w-4xl"
+        className="max-w-4xl bg-white/90 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-3xl p-6 md:p-0"
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-emerald-400 font-mono text-lg mb-4 tracking-widest uppercase"
+          className="text-indigo-500 font-mono text-sm md:text-lg mb-4 tracking-widest uppercase"
         >
           Full Stack Developer
         </motion.h2>
@@ -23,7 +23,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-5xl sm:text-7xl md:text-8xl font-bold text-slate-100 mb-6 tracking-tight"
+          className="text-4xl sm:text-6xl md:text-8xl font-bold text-slate-800 mb-4 md:mb-6 tracking-tight"
         >
           Harsh Patidar
         </motion.h1>
@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-slate-400 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed px-4"
+          className="text-slate-500 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-2"
         >
           Crafting high-performance web applications with a focus on interactive user experiences and robust backend architecture.
         </motion.p>
@@ -39,17 +39,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="flex flex-col sm:flex-row justify-center gap-4 px-6"
+          className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 px-4"
         >
           <a
             href="#projects"
-            className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 text-center"
+            className="px-6 md:px-8 py-3 md:py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 text-center text-sm md:text-base"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 border border-slate-700 hover:border-emerald-400 text-slate-200 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 text-center"
+            className="px-6 md:px-8 py-3 md:py-4 border border-slate-300 hover:border-indigo-400 text-slate-600 hover:text-indigo-500 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 text-center text-sm md:text-base"
           >
             Get in Touch
           </a>
@@ -59,9 +59,9 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500"
+        className="absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 text-slate-400"
       >
-        <ArrowDown size={32} />
+        <ArrowDown size={28} />
       </motion.div>
     </Section>
   );
